@@ -7,46 +7,26 @@ This was built as part of the Omniverse Fund – AI/ML / Quant Intern assessment
 The goal wasn’t to build a full exchange bot, but to demonstrate:
 
 event-driven program design
-
 real-time data handling
-
 market-mapping logic
-
 basic trading decision rules
-
 clean modular Python structure
-
 What the Engine Does
-
 Here’s the high-level flow:
-
 A mock feed generates random football goals (instead of using a paid API).
-
 Every event goes through a normalizer so the structure is always consistent.
-
 The matcher assigns the goal to a synthetic market (ex: Juventus_Inter → MKT_Juventus_Inter).
-
 A mock price feed gives a temporary market price (simulating price lag).
-
 The trader checks:
-
 Was the scoring team the underdog?
-
 Is the price still mispriced (< 0.50)?
-
 If yes → it logs a BUY trade.
-
 Everything is logged cleanly to the terminal.
-
 The engine is completely modular, so any part can later be replaced with a real API.
 
 How to Run the Project
-
 Install the only dependency:
-
 pip install websocket-client
-
-
 Run the engine:
 
 python main.py
