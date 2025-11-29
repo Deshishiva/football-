@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Goal Shock Trading Engine – Omniverse Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        .box {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        code, pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            display: block;
+            overflow-x: auto;
+        }
+
+        a {
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Goal Shock Trading Engine</h1>
+    <p>
+        Submission for Omniverse Fund – AI/ML / Quant Intern assessment.  
+        This page gives a quick overview of the project and links to the code.
+    </p>
+
+    <div class="box">
+        <h2>1. Project Summary</h2>
+        <p>
+            This engine listens to real-time football match events and reacts when an 
+            <strong>underdog team scores a goal</strong>.  
+            It attempts to exploit short-term price lag on prediction markets by placing 
+            fast buy orders before the market adjusts.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>2. What the System Does</h2>
+        <ul>
+            <li>Receives goal updates (mock feed for testing)</li>
+            <li>Normalizes incoming events</li>
+            <li>Maps events to synthetic markets</li>
+            <li>Simulates market prices</li>
+            <li>Trader decides "BUY" when underdog scores</li>
+            <li>Logs all decisions</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>3. Source Code</h2>
+        <p>
+            Full project repository:  
+            <strong><a href="#" target="_blank">[Add your GitHub link here]</a></strong>
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>4. How to Run Locally</h2>
+        <pre>
+git clone &lt;your repo&gt;
+cd project-folder
+
+# install dependencies
+pip install websocket-client
+
+# run engine
+python main.py
+        </pre>
+        <p>This runs the mock feed and prints trading activity in the terminal.</p>
+    </div>
+
+    <div class="box">
+        <h2>5. Workflow (Short Explanation)</h2>
+        <ul>
+            <li><strong>MockFeed</strong> → generates random match events</li>
+            <li><strong>Normalizer</strong> → cleans event structure</li>
+            <li><strong>Matcher</strong> → maps event to a market</li>
+            <li><strong>PriceFeed</strong> → simulates market price</li>
+            <li><strong>Trader</strong> → decides BUY or NO TRADE</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>6. Sample Output</h2>
+        <pre>
+EVENT: Juventus vs Inter (1–1)
+Trader: Underdog scored → BUY
+Order executed | size=20 | price=0.33
+        </pre>
+    </div>
+
+    <div class="box">
+        <h2>7. Submission Email Template</h2>
+        <pre>
+Subject: Omniverse — Engine Submission — [Your Name]
+
+Hi Daniel / Omniverse team,
+
+My project submission is here:
+[Insert your project link]
+
+Summary:
+- Engine Name: Goal Shock Engine
+- Markets: Live football trading
+- Run with: python main.py
+
+Thanks,
+[Your Name]
+[Your Email]
+        </pre>
+    </div>
+
+</body>
+</html>
+
