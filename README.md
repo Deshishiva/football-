@@ -24,9 +24,12 @@ If yes → it logs a BUY trade.
 Everything is logged cleanly to the terminal.
 The engine is completely modular, so any part can later be replaced with a real API.
 
-How to Run the Project
+How to Run the Project:
+
 Install the only dependency:
+
 pip install websocket-client
+
 Run the engine:
 
 python main.py
@@ -40,7 +43,7 @@ Underdog scored → BUY | Price=0.33 | Size=20
 
 This runs the system end-to-end using only local Python files — no external APIs are required.
 
-Folder Structure
+Folder Structure:
 main.py            → entry point
 mock_feed.py       → generates goal events
 normalizer.py      → cleans/standardizes event
@@ -54,7 +57,7 @@ index.html         → submission webpage (for Omniverse)
 logs/              → output logs
 README.md          → project documentation
 
-Sample Output
+Sample Output:
 
 Below is an actual output from one of the test runs:
 
