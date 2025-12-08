@@ -6,7 +6,7 @@ The core idea is simple: when a goal happens, the system checks whether the scor
 
 This project was built as part of the Omniverse Fund – AI/ML / Quant Intern assessment. It is not meant to be a full trading bot, but a clean demonstration of event-driven system design and trading decision logic.
 
-What the Engine Does
+What the Engine Does:
 
 Listens to football goal events (live or mock)
 
@@ -42,7 +42,7 @@ Is the goal minute within limits?
 
 If yes, a simulated BUY order is executed
 
-Project Structure
+Project Structure:
 main.py            → entry point
 live_feed.py       → WebSocket-based live goal feed
 mock_feed.py       → simulated goal feed
@@ -58,24 +58,24 @@ index.html         → submission / portfolio page
 logs/              → runtime logs
 README.md          → project documentation
 
-How to Run
+How to Run:
 Install dependencies
 pip install websocket-client requests
 
-Run the engine
+Run the engine:
 python main.py
 
 
 The engine will start immediately and print goal events and trade decisions in real time.
 
-Example Output
+Example Output:
 EVENT: Juventus_Inter | Score: (1, 1) | Minute: 33
 RESULT: BUY | market=MKT_Juventus_Inter | price=0.33 | size=20
 
 EVENT: Arsenal_Chelsea | Score: (0, 1)
 RESULT: NO TRADE | reason=high_prob
 
-Notes
+Notes:
 
 Requires no paid APIs to run
 
