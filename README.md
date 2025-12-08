@@ -82,3 +82,17 @@ Requires no paid APIs to run
 Falls back to mock data automatically if live feeds are not provided
 
 Designed to be easily extended with real exchanges and market data
+
+IMPORTANT NOTE:
+
+1. This project runs fully without API keys by default and automatically falls back to a mock feed when live credentials are not provided.
+
+2. Live WebSocket feeds, market tickers, and Kalshi demo integrations are included to demonstrate production-ready system design rather than live execution.
+
+3. All keys and URLs are intentionally excluded from the repository for security and evaluation purposes.
+
+4. The architecture is designed so real APIs can be plugged in later with minimal changes
+
+
+
+
